@@ -53,6 +53,8 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
+        background-color: slategray;
+        color: white;
     }
 
     h1 {

@@ -21,6 +21,7 @@
 		const enteredValue = event.target.value;
 		name = enteredValue;
 	};
+
 </script>
 
 <h1>Hello I am {upperCaseName}, my age is {age}!</h1>
