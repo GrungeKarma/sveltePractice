@@ -2,14 +2,15 @@
     export let userName;
     export let userJobTitle;
     export let userShortDescription;
+    export let userImage
 </script>
 
 <div class="contact-card">
     <header>
         <div class="thumb">
             <img
-                src="https://media.ifunny.com/results/2016/08/29/2ofdxcsxut.jpg"
-                alt="mouse"
+                src={userImage}
+                alt={userImage}
             />
         </div>
         <div class="user-data">
@@ -53,8 +54,7 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        background-color: slategray;
-        color: white;
+        color: slateblue;
     }
 
     h1 {
