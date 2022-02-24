@@ -38,7 +38,7 @@
 	userName={name}
 	userJobTitle={jobTitle}
 	userShortDescription={shortDescription}
-	userImage={image}
+	{image}
 />
 
 

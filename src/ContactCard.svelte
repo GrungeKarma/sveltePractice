@@ -2,15 +2,15 @@
     export let userName;
     export let userJobTitle;
     export let userShortDescription;
-    export let userImage
+    export let image;
 </script>
 
 <div class="contact-card">
     <header>
-        <div class="thumb">
+        <div class="thumb" class:thumb-placeholder={!image}>
             <img
-                src={userImage}
-                alt={userImage}
+                src={image}
+                alt={image}
             />
         </div>
         <div class="user-data">
@@ -19,11 +19,14 @@
         </div>
     </header>
     <div class="description">
-        <p>{userShortDescription}</p>
+        <p>{@html userShortDescription}</p>
     </div>
 </div>
 
 <style>
+    .thumb-placeholder {
+        background-color: orange;
+    }
     .contact-card {
         box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
         max-width: 30rem;
